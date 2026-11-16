@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body data-aos="fade-in">
     <div class="page-wrapper">
       <!-- Header -->
       <header class="header">
@@ -62,8 +63,13 @@
                 </span>
               </p>
               <div class="social-icons">
-                <a href="#" target="_blank"><img src="images/icons/instagram.svg" alt="" /></a>
-                <a href="#" target="_blank"><img src="images/icons/email.svg" alt="" /></a>
+                <a href="#" target="_blank" class="social-icon instagram">
+                  <img src="images/icons/instagram.svg" alt="Instagram" />
+                </a>
+
+                <a href="#" target="_blank" class="social-icon email">
+                  <img src="images/icons/email.svg" alt="Email" />
+                </a>
               </div>
             </div>
           </div>
@@ -75,5 +81,20 @@
         <p>©2026</p>
       </footer>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>

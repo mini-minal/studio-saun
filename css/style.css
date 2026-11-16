@@ -156,6 +156,7 @@ body {
 .social-icons a:first-child {
   position: relative;
   top: -18px;
+  right: -35px;
 }
 .social-icons a:last-child {
   position: relative;
@@ -281,5 +282,64 @@ body {
     width: 120px;
     padding-left: 10vw;
     padding-top: 20px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+.social-icon img {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.4s ease;
+}
+
+/* Floating animation */
+.social-icon.instagram {
+  animation-delay: 0s;
+}
+
+.social-icon.email {
+  animation-delay: 1s;
+}
+
+@keyframes floatIcon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Hover effect */
+.social-icon:hover {
+  transform: translateY(-8px) scale(1.15);
+}
+
+.social-icon:hover img {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .social-icon {
+    animation: none;
+    transition: none;
   }
 }
