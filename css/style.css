@@ -263,6 +263,9 @@ body {
   .page-wrapper {
     min-height: auto;
   }
+  .footer p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 332px) {
