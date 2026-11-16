@@ -234,7 +234,8 @@ body {
     padding-top: 35px;
   }
   .content p,
-  .desk-text p {
+  .desk-text p,
+  .hightlight-text {
     font-size: 14px;
     line-height: 20px;
   }
@@ -248,5 +249,9 @@ body {
   }
   .social-icons img {
     width: 22px;
+  }
+  .footer {
+    padding: 0px 20px 40px 5vw;
+    justify-content: center;
   }
 }
