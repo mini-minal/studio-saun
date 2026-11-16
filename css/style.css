@@ -233,4 +233,20 @@ body {
   .desk-text p {
     padding-top: 35px;
   }
+  .content p,
+  .desk-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .social-icons a:first-child {
+    top: -18px;
+    right: 16px;
+  }
+  .social-icons a:last-child {
+    right: 34px;
+    top: 12px;
+  }
+  .social-icons img {
+    width: 22px;
+  }
 }
